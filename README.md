@@ -20,7 +20,7 @@ thread_pool_c/
 └── README.md
 ```
 
-## Quick Start
+## Usage Exemple
 
 ```c
 #include "thread_pool.h"
