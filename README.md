@@ -38,7 +38,7 @@ void my_async_task(void *args) {
 int main() {
     task_queue *queue = create_task_queue();
     
-    pthread_t *pool = init_thread_pool(4, queue, NULL);
+    pthread_t *pool = init_thread_pool(4, queue, NULL); // thread pool with 4 threads
     
     while (1) {
       request *req = server_listen(5000);  // Wait for incoming request
